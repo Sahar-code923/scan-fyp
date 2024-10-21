@@ -1,0 +1,393 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* White text */
+}
+
+header {
+    width: 95%;
+    padding: 1rem 2rem;
+    background-color: #1E1E1E;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo a {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #BB86FC;
+  }
+  
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .btn {
+    background-color: #BB86FC;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #9F67F6;
+  }
+  
+  
+.user-access {
+    margin-left: auto; /* Push user access buttons to the right */
+}
+
+.user-access a {
+    text-decoration: none;
+    color: #ffffff; /* White text for buttons */
+    margin-left: 15px; /* Space between buttons */
+    padding: 10px 15px;
+    border: 1px solid transparent; /* For hover effect */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, border 0.3s; /* Smooth transition */
+}
+
+.user-access .login:hover,
+.user-access .register:hover {
+    background-color: #BB86FC; /* Background color on hover */
+    border: 1px solid #ffffff; /* White border on hover */
+}
+main {
+    padding: 20px;
+    
+}
+
+.hero {
+    background-color: #1e1e1e; /* Dark background for hero section */
+    text-align: center;
+    padding: 20px 20px;
+    border-radius: 10px; /* Rounded corners */
+    margin-top: 90px; }
+
+.hero h1 {
+    font-size: 36px; /* Large title font */
+    color: #BB86FC; /* Accent color for title */
+}
+
+.hero p {
+    font-size: 18px; /* Subheading font */
+    color: #ffffff; /* White text */
+}
+
+
+
+
+
+.scan-button {
+    background-color: #BB86FC; /* Button background */
+    color: #ffffff; /* Button text */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 10px; /* Space above button */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.scan-button:hover {
+    background-color: #BB86FC; /* Darker shade on hover */
+}
+
+.feedback-message {
+    margin-top: 15px; /* Space above feedback message */
+    color: #ffffff; /* White text for feedback */
+}
+
+.student-info {
+    background-color: #2b2b2b; /* Slightly lighter dark background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    margin: 30px;
+}
+
+.student-info h2 {
+    color: #BB86FC; /* Accent color for section title */
+}
+
+.info-card {
+    display: flex; /* Flex layout for photo and details */
+    align-items: center; /* Center vertically */
+    margin-top: 10px; /* Space above info card */
+    background-color: #1e1e1e; /* Dark background for card */
+    padding: 15px;
+    border-radius: 10px; /* Rounded corners */
+}
+
+.student-photo {
+    width: 80px; /* Width of student photo */
+    height: 80px; /* Height of student photo */
+    border-radius: 50%; /* Circular photo */
+    margin-right: 15px; /* Space between photo and details */
+}
+
+.student-details {
+    color: #ffffff; /* White text for details */
+}
+.student-info {
+    background-color: #2b2b2b; /* Dark background for the info section */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    margin-top: 20px; /* Space above student info section */
+}
+
+.student-info h2 {
+    color: #BB86FC; /* Accent color for section title */
+    margin-bottom: 15px; /* Space below title */
+}
+
+.info-card {
+    display: flex; /* Flex layout for photo and details */
+    align-items: center; /* Center vertically */
+    background-color: #1e1e1e; /* Dark background for card */
+    padding: 15px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+.student-photo {
+    width: 80px; /* Width of student photo */
+    height: 80px; /* Height of student photo */
+    border-radius: 50%; /* Circular photo */
+    margin-right: 15px; /* Space between photo and details */
+    border: 2px solid #BB86FC; /* Accent border around photo */
+}
+
+.student-details {
+    color: #ffffff; /* White text for details */
+}
+
+.student-details h3 {
+    margin: 0; /* Remove default margin */
+    font-size: 24px; /* Size for student name */
+}
+
+.student-details p {
+    margin: 5px 0; /* Space above and below paragraphs */
+}
+.attendance-streak {
+    background-color: #2b2b2b; /* Dark background for the attendance section */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    margin: 30px; /* Space above attendance section */
+}
+
+.attendance-streak h2 {
+    color: #BB86FC; /* Accent color for section title */
+    margin-bottom: 15px; /* Space below title */
+}
+
+.streak-info {
+    color: #ffffff; /* White text for details */
+    margin-bottom: 15px; /* Space below info */
+}
+
+.streak-info p {
+    margin: 5px 0; /* Space above and below paragraphs */
+    font-size: 18px; /* Font size for attendance details */
+}
+
+.streak-actions {
+    display: flex; /* Flex layout for buttons */
+    gap: 10px; /* Space between buttons */
+}
+
+
+.feedback-message {
+    margin-top: 10px; /* Space above feedback message */
+    color: #ffffff; /* White text for feedback */
+}
+.creative-features {
+    background-color: #2b2b2b; /* Dark background for features section */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    margin: 30px; /* Space above features section */
+}
+
+.creative-features h2 {
+    color: #BB86FC; /* Accent color for section title */
+    margin-bottom: 20px; /* Space below title */
+    text-align: center; /* Center the title */
+}
+
+.features-grid {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 15px; /* Space between feature cards */
+}
+
+.feature-card {
+    background-color: #1e1e1e; /* Dark background for feature cards */
+    padding: 15px;
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center text */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.feature-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.feature-card h3 {
+    color: #BB86FC; /* Accent color for feature titles */
+    margin-bottom: 10px; /* Space below title */
+}
+
+.feature-card p {
+    color: #ffffff; /* White text for feature descriptions */
+}
+.testimonials {
+    background-color: #2b2b2b; /* Dark background for testimonials section */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    margin: 30px; /* Space above testimonials section */
+}
+
+.testimonials h2 {
+    color: #BB86FC; /* Accent color for section title */
+    margin-bottom: 20px; /* Space below title */
+    text-align: center; /* Center the title */
+}
+
+.testimonial-cards {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 15px; /* Space between testimonial cards */
+}
+
+.testimonial-card {
+    background-color: #1e1e1e; /* Dark background for testimonial cards */
+    padding: 15px;
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center text */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+.testimonial-card p {
+    color: #ffffff; /* White text for testimonial content */
+    font-size: 16px; /* Font size for testimonial text */
+    margin-bottom: 10px; /* Space below testimonial text */
+}
+
+.testimonial-card h4 {
+    color: #BB86FC; /* Accent color for names */
+    margin: 0; /* Remove default margin */
+    font-size: 14px; /* Font size for names */
+    font-weight: normal; /* Normal weight for names */
+}
+.footer {
+    background-color: #1e1e1e; /* Dark background for footer */
+    color: #ffffff; /* White text color */
+    padding: 20px; /* Padding for spacing */
+    border-top: 1px solid #BB86FC; /* Accent border on top */
+    text-align: center; /* Center text in the footer */
+}
+
+.footer-content {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-around; /* Space out sections */
+    margin-bottom: 15px; /* Space below footer content */
+}
+
+.footer-links, .footer-contact, .footer-social {
+    flex: 1; /* Equal space for each section */
+    padding: 10px; /* Padding for spacing */
+    max-width: 300px;
+}
+
+.footer-links h4, .footer-contact h4, .footer-social h4 {
+    color: #BB86FC; /* Accent color for section titles */
+    margin-bottom: 10px; /* Space below titles */
+}
+
+.footer-links ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.footer-links li {
+    margin: 5px 0; /* Space between links */
+    
+}
+
+.footer-links a, .footer-contact a {
+    color: #ffffff; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.footer-links a:hover, .footer-contact a:hover {
+    color: #BB86FC; /* Change color on hover */
+}
+
+.footer-social ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+  }
+  
+  .footer-social ul li a img {
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.3s ease;
+  }
+  .footer h3 {
+    color: #BB86FC;
+    margin-bottom: 1rem;
+
+  }
+  
+  .footer-social ul li a:hover img {
+    opacity: 0.7;
+  }
+.footer-bottom {
+    margin-top: 10px; /* Space above bottom text */
+}
+
+.footer-bottom p {
+    margin: 0; /* Remove default margin */
+}
+.social-icons{
+    margin-left: 90px;
+}

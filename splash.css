@@ -1,0 +1,105 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+.splash-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    animation: fadeIn 1.5s ease-out;
+    padding: 20px;
+}
+
+.text-content {
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+}
+
+.text-content h1 {
+    font-size: 48px;
+    color: #BB86FC;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: slideInText 1.5s forwards 0.5s ease;
+}
+
+.text-content p {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: slideInText 1.5s forwards 0.7s ease;
+}
+
+.image-content {
+    width: 40%;
+    text-align: center;
+}
+
+.image-content video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .splash-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .text-content, .image-content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .text-content h1 {
+        font-size: 36px;
+    }
+
+    .text-content p {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .text-content h1 {
+        font-size: 28px;
+    }
+
+    .text-content p {
+        font-size: 16px;
+    }
+}
+
+/* Animations */
+@keyframes slideInText {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

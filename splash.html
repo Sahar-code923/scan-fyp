@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Detection - Welcome</title>
+    <link rel="stylesheet" href="splash.css">
+</head>
+<body>
+
+    <div class="splash-container">
+        <div class="text-content">
+            <h1 class="animate-text">Welcome to Student Detection System</h1>
+            <p class="animate-text">"Streamline student management with our innovative barcode scanning solution. Quickly scan student IDs to track attendance, monitor movements, and access records."</p>
+        </div>
+        <div class="image-content">
+            <video id="introVideo" autoplay muted>
+                <source src="images/video scan.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <script>
+        const video = document.getElementById('introVideo');
+        video.addEventListener('ended', function() {
+            window.location.href = 'index.html'; // Redirect to your main page
+        });
+    </script>
+    
+</body>
+</html>
