@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Detection System</title>
+  <link rel="stylesheet" href="learn.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Student Detection System</h1>
+      <p>Enhancing Campus Security with Barcode Technology</p>
+      <button class="cta-button" onclick="openModal()">How It Works</button>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <h2>Features at a Glance</h2>
+      <div class="feature-cards">
+        <div class="feature-card">
+          <h3>Real-Time Detection</h3>
+          <p>Instantly recognizes and identifies students at campus gates using barcode technology.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Security-Driven Design</h3>
+          <p>Prevents unauthorized access to ensure a secure environment.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Seamless Integration</h3>
+          <p>Easily integrates with existing campus security and management systems.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Modal -->
+    <div id="howItWorksModal" class="modal">
+      <div class="modal-content">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <h3>Behind the Technology</h3>
+        <p>The Student Detection System uses advanced barcode scanning to allow or restrict access. It captures student data instantly and integrates with existing university systems to manage entry at key locations.</p>
+      </div>
+    </div>
+
+    <!-- Use Cases Section -->
+    <section class="use-cases">
+      <h2>Where Can It Be Used?</h2>
+      <div class="use-case-icons">
+        <div class="use-case">
+          <img src="/images/gatae.jpg" alt="Main Gates">
+          <p>Main Gates</p>
+        </div>
+        <div class="use-case">
+          <img src="/images/library.jpg" alt="Library">
+          <p>Library Entries</p>
+        </div>
+        <div class="use-case">
+          <img src="/images/lab.jpg" alt="Labs">
+          <p>Restricted Labs</p>
+        </div>
+        <div class="use-case">
+          <img src="/images/event.jpg" alt="Event">
+          <p>Event Access</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+      <h2>About the System</h2>
+      <p>The Student Detection System leverages cutting-edge barcode technology to enhance campus security and streamline student identification. By implementing a reliable scanning system, universities can efficiently manage student access to various facilities, ensuring a secure environment while facilitating smooth entry processes.</p>
+      <p>This system not only aids in monitoring entry points but also contributes to overall campus safety by preventing unauthorized access. With real-time detection capabilities, staff can swiftly address security concerns, providing peace of mind to students, faculty, and parents alike.</p>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+      <h2>Benefits of the System</h2>
+      <p>The integration of the Student Detection System offers numerous benefits. First, it enhances operational efficiency by reducing wait times at entry points, allowing students to enter quickly and safely. Second, it provides valuable data analytics for campus security teams, helping them make informed decisions based on real-time data.</p>
+      <p>Furthermore, this system fosters a culture of security awareness among students, encouraging them to take responsibility for their safety. As educational institutions prioritize the well-being of their community, the Student Detection System stands out as an essential tool for modern campus management.</p>
+    </section>
+  </div>
+
+  <script>
+    // Modal Functions
+    function openModal() {
+      document.getElementById("howItWorksModal").style.display = "block";
+    }
+    
+    function closeModal() {
+      document.getElementById("howItWorksModal").style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      const modal = document.getElementById("howItWorksModal");
+      if (event.target === modal) {
+        closeModal();
+      }
+    }
+  </script>
+</body>
+</html>
