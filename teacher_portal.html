@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance Portal</title>
+    <link rel="stylesheet" href="teach_port.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Attendance Management</h1>
+        
+        <!-- Mark Attendance Form -->
+        <div class="form-card">
+            <h2>📝 Mark Attendance</h2>
+            <form action="mark_attendance.php" method="POST">
+                <div class="form-group">
+                    <label>Date:</label>
+                    <input type="date" name="date" required value="<?= date('Y-m-d') ?>">
+                </div>
+                <div class="form-group">
+                    <label>Student CNIC:</label>
+                    <input type="text" name="cnic" placeholder="XXXXX-XXXXXXX-X" required>
+                </div>
+                <button type="submit">Mark Present</button>
+            </form>
+        </div>
+
+        <!-- Export Form -->
+        <div class="form-card">
+            <h2>📤 Export Records</h2>
+            <form action="export_attendance.php" method="GET">
+                <div class="form-group">
+                    <label>Date (optional):</label>
+                    <input type="date" name="date">
+                    <small>Leave empty for all records</small>
+                </div>
+                <button type="submit">Export Excel</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
